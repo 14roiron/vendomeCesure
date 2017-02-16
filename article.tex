@@ -33,12 +33,13 @@
 \setlength{\columnsep}{2cm}
 
 
-
+\usepackage{multicol}
 \begin{document}
 
 \noindent
-\begin{minipage}{0.5\textwidth}  
-$
+\begin{minipage}[t][][b]{0.3\textwidth}
+%\begin{multicols}{2}
+\begin{equation}
 \begin{aligned}
  \text{COURTOIS Maxence } & \blacksquare \\\\\\
 \text{DEPERCIN Solene } & \blacksquare  \\\\\\
@@ -54,9 +55,13 @@ $
 \text{LARROCHE Arnaud }  &\blacksquare  \\\\\\
 \text{BENHAMOU Jeremie }  &\blacksquare  \\\\\\
 \end{aligned}
-$
+%$
+ \end{equation}
 \end{minipage}
-\begin{minipage}{.50\textwidth}
+\begin{minipage}{.70\textwidth}
+
+ %\break
+
 \begin{itemize}
 
  \item J'ai le tétanos à force d'offrir des clous rouillés. Et l'humidité de l'Indonésie aide pas !
@@ -74,4 +79,5 @@ $
  \item Partir en césure safari, c'est comme gérer la trésorerie du BDE, parfois on a de la chance et des bonnes surprises !
  \end{itemize}
 \end{minipage}
+%\end{multicols}
 \end{document}
